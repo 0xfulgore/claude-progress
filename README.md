@@ -46,12 +46,12 @@ Opus 4.6 │ ████░░░░░░ 42% │ services git:(main*) │ +15
 
 ### One-liner
 ```bash
-bash <(curl -sL https://raw.githubusercontent.com/YOUR_USERNAME/claude-progress/main/install.sh)
+bash <(curl -sL https://raw.githubusercontent.com/0xfulgore/claude-progress/main/install.sh)
 ```
 
 ### Manual
 ```bash
-git clone https://github.com/YOUR_USERNAME/claude-progress.git
+git clone https://github.com/0xfulgore/claude-progress.git
 cd claude-progress
 bash install.sh
 ```
