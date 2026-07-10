@@ -422,34 +422,39 @@
 
   <section class="reveal">
     <p class="kicker">The number, up front</p>
-    <h2>A premium build, at a founder's price.</h2>
-    <p class="lead">Three ways to size the same launch-ready MVP. The build compresses at agentic speed; payment edge-cases, real-device QA, app-store review and your own review cycles don't — which is exactly what the buffer buys.</p>
+    <h2>An 8-week sprint to a launch-ready app.</h2>
+    <p class="lead">A fixed-scope build of the whole loop, with roughly 2.5 weeks reserved for iterative fine-tuning — reacting to the app on your phone, not still writing features. Plan around eight weeks; the band on either side is honest, not hedging.</p>
 
     <div class="tiers">
       <div class="tier">
-        <div class="tname">Focused</div>
-        <div class="price">$50k</div>
-        <div class="days tnum">~50 days · ~10 weeks</div>
-        <div class="note">Heads-down agentic pace, minimal rework. The floor if scope holds firm.</div>
+        <div class="tname">Could land sooner</div>
+        <div class="price">~$32k</div>
+        <div class="days tnum">~6–7 weeks</div>
+        <div class="note">If the AI tailwinds hold and scope stays frozen, it can come in under.</div>
       </div>
       <div class="tier feature">
-        <div class="badge">Recommended</div>
-        <div class="tname">Recommended</div>
-        <div class="price">$65k</div>
-        <div class="days tnum">~65 days · ~13 weeks</div>
-        <div class="note">Iteration and back-and-forth built in — the honest planning number to hold a client to.</div>
+        <div class="badge">Plan around this</div>
+        <div class="tname">The 8-week sprint</div>
+        <div class="price">$40k</div>
+        <div class="days tnum">~8 weeks · 40 days</div>
+        <div class="note">Full loop built, then ~2.5 weeks of iterative fine-tuning &amp; launch. The number to hold to.</div>
       </div>
       <div class="tier">
-        <div class="tname">Considered</div>
-        <div class="price">$74k</div>
-        <div class="days tnum">~74 days · ~15 weeks</div>
-        <div class="note">Maximum contingency for scope discovery and extra polish rounds.</div>
+        <div class="tname">Could extend</div>
+        <div class="price">~$50k</div>
+        <div class="days tnum">~10 weeks</div>
+        <div class="note">If payments, App Store review or real-world iteration throw a curveball.</div>
       </div>
     </div>
 
+    <div class="callout" style="margin-top:34px;">
+      <h3>Estimating a build like this in 2026</h3>
+      <p>AI-assisted development has genuinely changed what one person can ship, and how fast — this price and pace only exist <em>because</em> of it. The same tailwind also makes a build harder to pin to an exact date: each week moves faster, and less predictably. So treat <strong>eight weeks as the number to plan around</strong> — it could land a week or two sooner with momentum on our side, or stretch a few weeks if review or iteration bites. Anyone quoting a precise, guaranteed date for this in this landscape is projecting more confidence than the tools justify. What I <em>can</em> commit to: a testable build on your phone every single week.</p>
+    </div>
+
     <div class="context">
-      <div class="stat"><b>~⅓</b><span>of typical agency cost ($150k–$300k+)</span></div>
-      <div class="stat"><b>~½</b><span>the timeline of a traditional build</span></div>
+      <div class="stat"><b>~2.5 wks</b><span>reserved for iterative fine-tuning</span></div>
+      <div class="stat"><b>~⅕</b><span>of typical agency cost ($150k–$300k+)</span></div>
       <div class="stat"><b>1</b><span>builder, AI-augmented end to end</span></div>
     </div>
   </section>
@@ -518,19 +523,19 @@
       <table>
         <thead><tr><th>Layer</th><th>Choice</th><th>Why</th></tr></thead>
         <tbody>
-          <tr><td class="strong">Mobile</td><td>React Native + Expo</td><td class="why">One codebase for iOS &amp; Android; fastest solo path; OTA updates.</td></tr>
+          <tr><td class="strong">Mobile</td><td>React Native + Expo · iOS first</td><td class="why">One codebase; iOS-first for the sprint, Android as a fast-follow; OTA updates.</td></tr>
           <tr><td class="strong">Backend</td><td>Supabase</td><td class="why">Postgres, auth, realtime, storage &amp; functions in one managed platform.</td></tr>
           <tr><td class="strong">Payments</td><td>Stripe</td><td class="why">All three tiers, pay-per-event, and the refundable-deposit hold/capture.</td></tr>
           <tr><td class="strong">Chat</td><td>Supabase Realtime</td><td class="why">Table threads before, during and after the night.</td></tr>
           <tr><td class="strong">Push · Maps</td><td>Expo Push · Mapbox</td><td class="why">Invitations &amp; reminders; venue distance and neighbourhood logic.</td></tr>
-          <tr><td class="strong">Ops tool</td><td>Next.js back-office</td><td class="why">Where you actually run the dinners (see below).</td></tr>
+          <tr><td class="strong">Ops tool</td><td>Thin admin now · Next.js later</td><td class="why">Run first cohorts semi-manually; polished back-office is a fast-follow (see below).</td></tr>
         </tbody>
       </table>
     </div>
 
     <div class="callout">
       <h3>The part most estimates forget</h3>
-      <p>Gather's magic — "the right room," "matched to you," "a vetted venue" — is curated, not automatic. For v1, matching is a heuristic engine that <em>proposes</em> tables for a human curator to approve, and someone has to source venues, open cohorts and watch deposits. So a curator back-office isn't optional; it's how the product runs. It's scoped into the build, not bolted on later.</p>
+      <p>Gather's magic — "the right room," "matched to you," "a vetted venue" — is curated, not automatic. For v1, matching is a heuristic engine that <em>proposes</em> tables for you to approve, and someone has to source venues, open cohorts and watch deposits. The sprint ships a <strong>thin ops layer</strong> — enough to run the first small cohorts by hand — and the polished curator back-office is the first fast-follow, built once the loop has proven what the workflow needs.</p>
     </div>
   </section>
 
@@ -578,33 +583,31 @@
   </section>
 
   <section class="reveal">
-    <p class="kicker">The build, phase by phase</p>
-    <h2>Thirteen phases, each ending on your phone.</h2>
-    <p class="lead">Working days for a solo, AI-augmented build. Iteration is embedded in the ranges; the recommended total adds contingency on top. Every 1–2 week block ships a testable build.</p>
+    <p class="kicker">The 8-week plan</p>
+    <h2>Build the whole loop, then fine-tune it.</h2>
+    <p class="lead">Five-and-a-half weeks of build, then ~2.5 weeks of iterative fine-tuning and launch. Scope freezes at kickoff, and every week ends on your phone.</p>
 
     <div class="phases">
-      <div class="phase"><span class="pn">00</span><h3>Foundations</h3><p>Architecture, Supabase + Expo + Stripe setup, CI, and the full data model.</p><span class="dur tnum">3–4<small>days</small></span></div>
-      <div class="phase"><span class="pn">01</span><h3>Design system → code</h3><p>The deck's system as a reusable RN component library, themeable accent, 4-tab shell.</p><span class="dur tnum">4–6<small>days</small></span></div>
-      <div class="phase"><span class="pn">02</span><h3>Onboarding &amp; waitlist</h3><p>Welcome, invite codes, city + email, cohorts, the compatibility quiz.</p><span class="dur tnum">4–6<small>days</small></span></div>
-      <div class="phase key"><span class="pn">03</span><h3>Membership &amp; payments</h3><p>Stripe tiers, subscriptions, pay-per-event, renewal, one-tap cancel.</p><span class="dur tnum">5–8<small>days</small></span></div>
-      <div class="phase key"><span class="pn">04</span><h3>The Loop — invite → RSVP → deposit</h3><p>Home, weekly invitation, venue + match score, refundable deposit, check-in.</p><span class="dur tnum">5–7<small>days</small></span></div>
-      <div class="phase key"><span class="pn">05</span><h3>The table &amp; live chat</h3><p>Table reveal, realtime group thread, after-party, photo share, push.</p><span class="dur tnum">5–7<small>days</small></span></div>
-      <div class="phase"><span class="pn">06</span><h3>Continuity — rate, reconnect, crew</h3><p>Post-dinner rating, keep-connections, crews, plan-a-dinner, matching feedback.</p><span class="dur tnum">4–5<small>days</small></span></div>
-      <div class="phase"><span class="pn">07</span><h3>Matching engine v1</h3><p>Heuristic compatibility scoring + curator-assisted table formation.</p><span class="dur tnum">3–5<small>days</small></span></div>
-      <div class="phase key"><span class="pn">08</span><h3>Curator back-office</h3><p>Web tool: cohorts, venues, waitlists, form tables, monitor deposits &amp; check-ins.</p><span class="dur tnum">5–7<small>days</small></span></div>
-      <div class="phase"><span class="pn">09</span><h3>Trust, safety &amp; profile</h3><p>Reporting, blocking, code of conduct, membership management, show-up rate.</p><span class="dur tnum">3–4<small>days</small></span></div>
-      <div class="phase"><span class="pn">10</span><h3>Polish, motion &amp; theming</h3><p>Cinematic transitions, glass polish, wine/sage moods, accessibility pass.</p><span class="dur tnum">3–5<small>days</small></span></div>
-      <div class="phase"><span class="pn">11</span><h3>QA &amp; hardening</h3><p>End-to-end + payment edge-cases, real-device iOS &amp; Android testing.</p><span class="dur tnum">4–6<small>days</small></span></div>
-      <div class="phase"><span class="pn">12</span><h3>Store submission &amp; launch</h3><p>Listings, screenshots, privacy declarations, review buffer, production deploy.</p><span class="dur tnum">2–4<small>days</small></span></div>
-      <div class="phase total"><h3>MVP — one city, launch-ready</h3><span class="dur tnum">50–74<small>working days</small></span></div>
+      <div class="phase"><span class="pn">WEEK 1</span><h3>Foundations + design system → code</h3><p>Data model, Supabase + Expo + Stripe setup, CI, the RN component library from the deck, themeable accent, 4-tab shell.</p><span class="dur tnum">Build<small>on your phone</small></span></div>
+      <div class="phase"><span class="pn">WEEK 2</span><h3>Onboarding &amp; waitlist</h3><p>Cinematic welcome, invite-code auth, city + email, cohorts, the compatibility quiz.</p><span class="dur tnum">Build<small>on your phone</small></span></div>
+      <div class="phase key"><span class="pn">WEEK 3</span><h3>Membership &amp; payments — protected core</h3><p>Stripe tiers, subscriptions, pay-per-event, renewal, one-tap cancel, and the refundable deposit hold.</p><span class="dur tnum">Build<small>on your phone</small></span></div>
+      <div class="phase key"><span class="pn">WEEK 4</span><h3>The Loop</h3><p>Home + stats, weekly invitation, venue + match score, confirm-seat + deposit, table reveal with why-matched.</p><span class="dur tnum">Build<small>on your phone</small></span></div>
+      <div class="phase key"><span class="pn">WEEK 5</span><h3>Continuity + close the loop</h3><p>Realtime table chat + push, after-party, rate → reconnect, crew, heuristic matching, safety baseline, thin admin.</p><span class="dur tnum">Build<small>loop complete</small></span></div>
+      <div class="phase"><span class="pn">WEEK 6</span><h3>Iterative fine-tuning</h3><p>Polish, motion, glass, wine/sage theming — plus feedback round 1 on real devices.</p><span class="dur tnum">Refine<small>fine-tuning</small></span></div>
+      <div class="phase"><span class="pn">WEEK 7</span><h3>Iterative fine-tuning</h3><p>Real-device QA, payment &amp; deposit edge-cases, bug-fix — plus feedback round 2.</p><span class="dur tnum">Refine<small>fine-tuning</small></span></div>
+      <div class="phase key"><span class="pn">WEEK 8</span><h3>Launch</h3><p>App Store listing, screenshots, privacy declarations, review buffer, fixes, production go-live.</p><span class="dur tnum">Ship<small>go-live</small></span></div>
+      <div class="phase total"><h3>MVP — one city, iOS, launch-ready</h3><span class="dur tnum">~8 wks<small>40 days · $40k</small></span></div>
     </div>
   </section>
 
   <section class="reveal">
-    <p class="kicker">Deliberately not in v1</p>
-    <h2>Ship lean, prove the loop, then scale.</h2>
-    <p class="lead">Each is a natural follow-on, quotable once the MVP is live and learning.</p>
+    <p class="kicker">Fast-follows, not cuts</p>
+    <h2>What ships right after launch to protect the eight weeks.</h2>
+    <p class="lead">The first three land within a few weeks of go-live (~$10k–$15k); the rest are natural follow-on engagements, quotable once the loop is live and learning.</p>
     <div class="chips">
+      <span class="chip" style="border-color:var(--hairline);color:var(--gold-bright);">Android build &amp; Play Store</span>
+      <span class="chip" style="border-color:var(--hairline);color:var(--gold-bright);">Polished curator back-office</span>
+      <span class="chip" style="border-color:var(--hairline);color:var(--gold-bright);">Trust &amp; safety uplift · ID verification</span>
       <span class="chip">Data-driven / ML matching</span>
       <span class="chip">Multi-city scale &amp; ops automation</span>
       <span class="chip">Black concierge tooling</span>
@@ -613,8 +616,6 @@
       <span class="chip">Member web app</span>
       <span class="chip">Advanced analytics / BI</span>
       <span class="chip">Memories &amp; recaps</span>
-      <span class="chip">ID verification</span>
-      <span class="chip">Status &amp; loyalty mechanics</span>
     </div>
   </section>
 
@@ -625,10 +626,11 @@
       <div class="panel">
         <h3>Assumptions</h3>
         <ul>
-          <li>One launch city (Sydney) for the MVP.</li>
+          <li>One launch city (Sydney), iOS first, for the MVP.</li>
+          <li>Scope freezes at kickoff — the biggest lever on hitting 8 weeks.</li>
           <li>Matching is heuristic + human-curated for v1.</li>
           <li>You own the business side: venues, curation, cohorts, content.</li>
-          <li>Brand &amp; design are set — these phases implement, not discover.</li>
+          <li>Brand &amp; design are set — the work implements, not discovers.</li>
           <li>Stripe under Apple's real-world-service exemption, pending confirmation.</li>
         </ul>
       </div>
@@ -648,10 +650,11 @@
     <h2>Let's <em>set the table.</em></h2>
     <p>Curated dining memberships for real-world connection — built lean, launched in one city, ready to scale.</p>
     <ol class="steps">
-      <li><span class="n">1</span>Confirm the ~$65k / ~13-week scope, or tell me where to trim.</li>
-      <li><span class="n">2</span>Lock the three sign-off decisions — payments, safety, legal.</li>
-      <li><span class="n">3</span>Choose the launch city and first cohort.</li>
-      <li><span class="n">4</span>Kick off Phase 0 — a running skeleton on your phone in week one.</li>
+      <li><span class="n">1</span>Confirm the ~$40k / ~8-week sprint, and the honest band around it.</li>
+      <li><span class="n">2</span>Agree to freeze scope at kickoff — the rule that makes eight weeks real.</li>
+      <li><span class="n">3</span>Lock the sign-off decisions — payments, safety, legal.</li>
+      <li><span class="n">4</span>Choose the launch city, the iOS-first call, and first cohort.</li>
+      <li><span class="n">5</span>Kick off week 1 — a running skeleton on your phone within the week.</li>
     </ol>
     <div class="signoff">Gather · Brand &amp; Product System · Prepared for Gary Shannon · $1,000/day</div>
   </div>
